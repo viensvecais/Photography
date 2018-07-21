@@ -1,0 +1,68 @@
+{
+  "name": "jolanta-liva-photography",
+  "version": "1.0.0",
+  "description": "Photography portfolio website",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "npm run dev",
+    "server": "npm run server:default -- --env.env=dev --hot",
+    "server:prod": "npm run server:default -- --env.env=prod",
+    "server:default": "webpack-dev-server",
+    "watch": "npm run watch:default -- --env.env=dev",
+    "watch:prod": "npm run watch:default -- --env.env=prod",
+    "watch:default": "npm run build -- --watch",
+    "dev:bundleanalyze": "npm run dev -- --env.addons=bundleanalyze",
+    "dev": "npm run build -- --env.env=dev",
+    "prod:bundleanalyze": "npm run prod -- --env.addons=bundleanalyze",
+    "prod": "npm run build -- --env.env=prod",
+    "build": "webpack",
+    "webpack-defaults": "webpack-defaults",
+    "debug": "node --inspect --debug-brk ./node_modules/webpack/bin/webpack.js",
+    "debug:prod": "npm run debug -- --env.env=prod",
+    "debug:dev": "npm run debug -- --env.env=dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/viensvecais/Photography.git"
+  },
+  "keywords": [
+    "front-end",
+    "webpack",
+    "photography"
+  ],
+  "author": "Mārtiņš Muša",
+  "license": "MIT",
+  "homepage": " ",
+  "devDependencies": {
+    "autoprefixer": "^8.6.4",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.5.2",
+    "css-loader": "^0.28.11",
+    "favicons-webpack-plugin": "0.0.9",
+    "file-loader": "^1.1.11",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "imagemin-webpack-plugin": "^2.1.5",
+    "mini-css-extract-plugin": "^0.4.1",
+    "node-sass": "^4.9.2",
+    "optimize-css-assets-webpack-plugin": "^4.0.3",
+    "postcss-easing-gradients": "^3.0.0",
+    "postcss-loader": "^2.1.5",
+    "sass-loader": "^7.0.3",
+    "uglifyjs-webpack-plugin": "^1.2.7",
+    "webpack": "^4.14.0",
+    "webpack-bundle-analyzer": "^2.13.1",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4",
+    "webpack-merge": "^4.1.3"
+  },
+  "dependencies": {
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  }
+}
