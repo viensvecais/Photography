@@ -5,7 +5,7 @@
   "main": "webpack.config.js",
   "scripts": {
     "test": "npm run dev",
-    "server": "npm run server:default -- --env.env=dev --hot",
+    "server": "npm run server:default -- --env.env=dev",
     "server:prod": "npm run server:default -- --env.env=prod",
     "server:default": "webpack-dev-server",
     "watch": "npm run watch:default -- --env.env=dev",
@@ -53,6 +53,7 @@
     "optimize-css-assets-webpack-plugin": "^4.0.3",
     "postcss-easing-gradients": "^3.0.0",
     "postcss-loader": "^2.1.5",
+    "prettier-eslint": "^8.8.2",
     "sass-loader": "^7.0.3",
     "uglifyjs-webpack-plugin": "^1.2.7",
     "webpack": "^4.14.0",
