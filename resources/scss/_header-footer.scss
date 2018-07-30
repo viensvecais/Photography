@@ -52,5 +52,32 @@
     }
   }
 }
-
+@media (max-width: $breakpoint_md) {
+  .header {
+    &__content {
+      &__brand {
+        margin-bottom: 35px;
+      }
+      &__horizontal-line {
+        border-top: 1px solid white;
+        width: 50px;
+        margin: 20px auto 20px auto;
+      }
+    }
+    &__arrow {
+      &__img {
+        height: 10px;
+      }
+    }
+    @keyframes ArrowUpDown {
+      0%,
+      100% {
+        bottom: 5px;
+      }
+      50% {
+        bottom: 15px;
+      }
+    }
+  }
+}
 // Site Footer

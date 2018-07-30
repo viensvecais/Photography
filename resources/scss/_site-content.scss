@@ -53,4 +53,24 @@ p {
   p {
   }
 }
+@media (max-width: $breakpoint_md) {
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+  }
+  h3 {
+  }
+  h4 {
+    font-size: 16px;
+  }
+  h5 {
+    font-size: 25px;
+  }
+  h6 {
+    font-size: 16px;
+  }
+  p {
+  }
+}
 // General

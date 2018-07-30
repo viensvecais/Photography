@@ -4,7 +4,11 @@ export class Menu extends React.Component {
   render() {
     return (
       <div className="menu">
-        <h1>This is Menu section</h1>
+        <a className="menu__btn" href="#">
+          <hr className="menu__btn__line menu__btn__line-top"/>
+          <hr className="menu__btn__line menu__btn__line-mid"/>
+          <hr className="menu__btn__line menu__btn__line-bottom"/>
+        </a>
       </div>
     );
   }
