@@ -1,5 +1,6 @@
 /* Site content */
-#app {
+.content {
+  position: relative;
   max-width: $site_width;
   text-align: center;
   margin: 0 auto;

@@ -1,7 +1,10 @@
 // Infopage
 
 // Variables
-// Grid
+// Mixins
+@mixin easeInOut {
+  transition: all 0.5s ease-in-out;
+}
 // Site width ( max width of site content )
 $site_width: 100vw;
 // Breakpoints ( viewport widths that serve as breakpoints for style and layout changes )
@@ -18,6 +21,7 @@ $breakpoint_md: map-get($breakpoints, md) - 1;
 $breakpoint_sm: map-get($breakpoints, sm) - 1;
 // Gutters ( site paddins (left and right) ) that can be changed according to breakpoints // Column paddings ( left and right ) that can be changed according to breakpoints // Colors
 // Color an background-color classes for custom use
+$red1: #d07c7c;
 // Others ( add all values that you think should be variables )
 // Import Styles ( comment out any partial of framework that does not fit your needs )
 // Framework
