@@ -24,12 +24,10 @@ $breakpoint_sm: map-get($breakpoints, sm) - 1;
 $red1: #d07c7c;
 // Others ( add all values that you think should be variables )
 // Import Styles ( comment out any partial of framework that does not fit your needs )
-// Framework
 @import "_resets";
 @import "_cookies";
 @import "_browser-update";
 @import "_404";
-// Theme
 @import "typography";
 @import "site-content";
 @import "header-footer";

@@ -33,6 +33,9 @@ h6 {
 }
 p {
 }
+a {
+  text-decoration: none !important;
+}
 
 @media (max-width: $breakpoint_sm) {
   h1 {

@@ -114,7 +114,8 @@ const config = {
                 require("postcss-easing-gradients"),
                 require("autoprefixer")({
                   browsers: ["> 1%", "last 2 versions", "IE 10", "IE 11"],
-                  cascade: false
+                  cascade: false,
+                  grid: true
                 })
               ]
             }
