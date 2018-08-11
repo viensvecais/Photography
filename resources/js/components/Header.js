@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export class Header extends React.Component {
   render() {
@@ -23,13 +24,13 @@ export class Header extends React.Component {
             repellendus.
           </h4>
         </div>
-        <a className="header__arrow" href="#">
+        <Link className="header__arrow" to="/work">
           <img
             className="header__arrow__img"
             src={require("../../img/arrow.png")}
             alt="Arrow down"
           />
-        </a>
+        </Link>
       </div>
     );
   }

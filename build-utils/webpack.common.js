@@ -45,23 +45,23 @@ const config = {
     }),
     new MiniCssExtractPlugin({
       filename: "./css/style.css"
-    }),
-    new FaviconsWebpackPlugin({
-      logo: "./resources/img/favicon.png",
-      prefix: "images/",
-      icons: {
-        android: false,
-        appleIcon: false,
-        appleStartup: false,
-        coast: false,
-        favicons: true,
-        firefox: false,
-        opengraph: false,
-        twitter: false,
-        yandex: false,
-        windows: false
-      }
     })
+    // new FaviconsWebpackPlugin({
+    //   logo: "./resources/img/favicon.png",
+    //   prefix: "images/",
+    //   icons: {
+    //     android: false,
+    //     appleIcon: false,
+    //     appleStartup: false,
+    //     coast: false,
+    //     favicons: true,
+    //     firefox: false,
+    //     opengraph: false,
+    //     twitter: false,
+    //     yandex: false,
+    //     windows: false
+    //   }
+    // })
   ],
   module: {
     rules: [
@@ -69,6 +69,7 @@ const config = {
         test: /\.js?/,
         loader: "babel-loader",
         query: {
+          compact: true,
           presets: ["react", "es2015", "stage-2"]
         }
       },

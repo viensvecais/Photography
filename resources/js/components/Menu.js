@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export class Menu extends React.Component {
   constructor(props) {
@@ -14,7 +15,6 @@ export class Menu extends React.Component {
   }
 
   toggleOverlay(e) {
-    e.preventDefault();
     if (!this.state.showMenu) {
       this.setState({
         showMenu: true,
@@ -36,11 +36,7 @@ export class Menu extends React.Component {
   render() {
     return (
       <div className="menu">
-        <a
-          className={this.state.menuBtnClassName}
-          href="#"
-          onClick={this.toggleOverlay}
-        >
+        <a className={this.state.menuBtnClassName} onClick={this.toggleOverlay}>
           <div className="menu__btn__line menu__btn__line-top" />
           <div className="menu__btn__line menu__btn__line-mid" />
           <div className="menu__btn__line menu__btn__line-bottom" />
@@ -55,29 +51,49 @@ export class Menu extends React.Component {
           </div>
           <ul className={this.state.menuOverlayNav}>
             <li className="menu__overlay__navigation__item">
-              <a className="menu__overlay__navigation__item__link" href="/">
+              <Link
+                className="menu__overlay__navigation__item__link"
+                to="/"
+                onClick={this.toggleOverlay}
+              >
                 Sākums
-              </a>
+              </Link>
             </li>
             <li className="menu__overlay__navigation__item">
-              <a className="menu__overlay__navigation__item__link" href="/">
+              <Link
+                className="menu__overlay__navigation__item__link"
+                to="/about"
+                onClick={this.toggleOverlay}
+              >
                 Par mani
-              </a>
+              </Link>
             </li>
             <li className="menu__overlay__navigation__item">
-              <a className="menu__overlay__navigation__item__link" href="/">
+              <Link
+                className="menu__overlay__navigation__item__link"
+                to="/work"
+                onClick={this.toggleOverlay}
+              >
                 Galerijas
-              </a>
+              </Link>
             </li>
             <li className="menu__overlay__navigation__item">
-              <a className="menu__overlay__navigation__item__link" href="/">
+              <Link
+                className="menu__overlay__navigation__item__link"
+                to="/testimonials"
+                onClick={this.toggleOverlay}
+              >
                 Atsauksmes
-              </a>
+              </Link>
             </li>
             <li className="menu__overlay__navigation__item">
-              <a className="menu__overlay__navigation__item__link" href="/">
+              <Link
+                className="menu__overlay__navigation__item__link"
+                to="/contact"
+                onClick={this.toggleOverlay}
+              >
                 Kontakti
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>

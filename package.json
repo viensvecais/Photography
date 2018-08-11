@@ -5,7 +5,7 @@
   "main": "webpack.config.js",
   "scripts": {
     "test": "npm run dev",
-    "server": "npm run server:default -- --env.env=dev",
+    "server": "npm run server:default -- --env.env=dev --history-api-fallback",
     "server:prod": "npm run server:default -- --env.env=prod",
     "server:default": "webpack-dev-server",
     "watch": "npm run watch:default -- --env.env=dev",
@@ -64,6 +64,7 @@
   },
   "dependencies": {
     "react": "^16.4.1",
-    "react-dom": "^16.4.1"
+    "react-dom": "^16.4.1",
+    "react-router-dom": "^4.3.1"
   }
 }
