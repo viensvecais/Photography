@@ -1,9 +1,30 @@
+//React transition group
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 1s ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+
 /* Site content */
 .content {
   position: relative;
   max-width: $site_width;
+  height: 100vh;
   text-align: center;
   margin: 0 auto;
+  overflow: hidden;
 }
 h1 {
   font-family: Playfair Display;

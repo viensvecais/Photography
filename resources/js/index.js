@@ -8,16 +8,13 @@ import { Main } from "./components/Main";
 class App extends React.Component {
   render() {
     return (
-      <div className="content">
-        <Menu />
-        <Main />
-      </div>
+      <BrowserRouter>
+        <div className="content">
+          <Menu />
+          <Main />
+        </div>
+      </BrowserRouter>
     );
   }
 }
-render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>,
-  window.document.getElementById("app")
-);
+render(<App />, window.document.getElementById("app"));
