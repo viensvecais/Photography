@@ -14,7 +14,7 @@ export class Menu extends React.Component {
     };
   }
 
-  toggleOverlay(e) {
+  toggleOverlay() {
     if (!this.state.showMenu) {
       this.setState({
         showMenu: true,
